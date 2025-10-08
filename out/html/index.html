@@ -21,7 +21,7 @@
     <div class="background" id="bg1">
     </div>
 
-    <div id="options" class="overlay" style="display: none;">
+    <div id="options" class="overlay options" style="display: none;">
         <div class="overlay_top">
             <table>
                 <tr>
@@ -101,7 +101,26 @@
                         <input type="radio" id="audio_no" name="audio" value="0" onclick="window.disableAudio();">
                     </td>
                 </tr>
-
+                <tr>
+                    <td> <hr> </td>
+                </tr>
+                <tr>
+                    <td>
+                        Color scheme:
+                    </td>
+                    <td>
+                        <label for="light_mode">Light mode</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="light_mode" name="ld_mode" value="1" onclick="window.enableLightMode();">
+                    </td>
+                    <td>
+                        <label for="dark_mode">Dark mode</label>
+                    </td>
+                    <td>
+                        <input type="radio" id="dark_mode" name="ld_mode" value="0" onclick="window.enableDarkMode();">
+                    </td>
+                </tr>
                 <tr>
                     <td>
                         <button onclick="window.hideOptions();">Close</button>
@@ -119,7 +138,7 @@
         </div>
     </div>
 
-    <div id="save" class="overlay" style="display: none;">
+    <div id="save" class="overlay saves" style="display: none;">
         <table id="saves_table" class="overlay_top">
             <tr>
                 <td>Auto-0</td>
