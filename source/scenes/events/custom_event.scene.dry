@@ -1,0 +1,24 @@
+title: My Custom Event
+subtitle: Something interesting happens
+tags: event
+view-if: year = 1930 and month = 6
+priority: 2
+max-visits: 1
+on-arrival: {!
+    Q.resources += 5;
+    Q.workers_spd += 2;
+!}
+
+Your event description here. The party gains resources and worker support.
+
+@choice_1
+title: Accept the offer
+on-arrival: resources += 10; reformists_strength += 5
+
+You accept and gain 10 resources. The reformists are pleased.
+
+@choice_2
+title: Reject the offer
+on-arrival: left_strength += 5; sa_strength += 3
+
+You reject the offer. The left wing approves of your principled stance.
