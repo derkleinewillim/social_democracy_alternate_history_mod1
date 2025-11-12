@@ -20,8 +20,8 @@ go-to: start_menu_2
 on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
-Q.time = 1;
-Q.year = 1926;
+Q.time = 0.5;
+Q.year = 1925;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
