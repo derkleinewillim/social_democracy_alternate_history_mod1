@@ -20,9 +20,15 @@ go-to: start_menu_2
 on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
-Q.time = 0.5;
+Q.time = 0;
 Q.year = 1925;
-Q.month = 0.5;
+Q.month = 1;
+
+Q.in_election = 0;
+Q.next_election_year = 1928;
+Q.next_election_month = 5;
+Q.next_election_time = 40;
+
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -260,7 +266,25 @@ Q.officers_qol = 100;
 Q.unemployed_qol = 100;
 
 
-Q.classes = ['blue-collar workers', 'white-collar employees', 'technical professionals', 'service sector workers', 'small artisans', 'petty bourgoise', 'freelance workers', 'small farmers', 'large farmers', 'rural workers', 'Industrialists', 'civil servants', 'soldiers', 'officers', 'students', 'unemployed'];
+Q.classes = [
+  'blue_collar',
+  'white_collar',
+  'technical_professionals',
+  'service_workers',
+  'small_artisans',
+  'petty_retail',
+  'independent_professionals',
+  'small_farmers',
+  'large_farmers',
+  'rural_labourers',
+  'industrialists',
+  'civil_servants',
+  'soldiers',
+  'officers',
+  'students',
+  'unemployed'
+];
+
 Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'wp', 'other'];
 
 // TODO: add 'sapd' later on
