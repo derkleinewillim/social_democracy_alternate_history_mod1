@@ -464,7 +464,7 @@ Q.dnvp_r = 20.5;
 Q.nsdap_r = 3.0;
 Q.bvp_r = 3.8;
 Q.wp_r = 2.3;
-Q.other_r = 9;
+Q.other_r = 5.6;
 
 // diff from prev
 Q.old_spd_r = 26.0;
