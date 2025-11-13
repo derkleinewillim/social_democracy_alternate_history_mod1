@@ -476,7 +476,7 @@ Q.old_dnvp_r = 20.5;
 Q.old_nsdap_r = 3.0;
 Q.old_bvp_r = 3.8;
 Q.old_wp_r = 2.3;
-Q.old_other_r = 9;
+Q.old_other_r = 5.6;
 
 // sapd isn't formed yet, but it may be formed
 Q.sapd_r = 0;
