@@ -285,7 +285,7 @@ Q.classes = [
   'unemployed'
 ];
 
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'wp', 'other'];
+Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'wp', 'bvp', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
