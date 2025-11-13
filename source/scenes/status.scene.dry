@@ -76,17 +76,29 @@ Economic growth: [+ economic_growth_2 +]%
 = Inter-party Relations
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
+[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Center Party">Zentrum (Z)</span>!}: [+ z_r +]%
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Bavarian People's Party">BVP</span>!}: [+ bvp_r +]%
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="German Democratic Party">!}
+[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]
+{!</span>!}: [+ ddp_r +]%
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+
+{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+
+{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+
+{!<span class="tooltip-text" title="Wirtschaftspartei etc.">WP</span>!}: [+ wp_r +]%
+
+Others: [+ other_r +]%
+
 
 = Internal Factions of the SPD
 
@@ -158,11 +170,17 @@ Q.socialism_disp = Math.round(Q.socialism);
 
 (if the election were to be held now):
 
+= Projected election results
+
+(if the election were to be held now):
+
 SPD: [+ spd_votes +]%
 
 [? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
 
 Zentrum: [+ z_votes +]%
+
+BVP: [+ bvp_votes +]%
 
 KPD: [+ kpd_votes +]%
 
@@ -177,6 +195,7 @@ NSDAP: [+ nsdap_votes +]%
 WP: [+ wp_votes +]%
 
 Others: [+ other_votes +]%
+
 
 
 **Detailed results for each demographic**
