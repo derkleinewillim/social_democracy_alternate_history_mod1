@@ -227,8 +227,8 @@ Q.unemployed_qol = 100;
 Q.old_middle_qol = 100;
 Q.new_middle_qol = 100;
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.classes = ['blue-collar workers', 'white-collar employees', 'technical professionals', 'service sector workers', 'small artisans', 'petty bourgoise', 'freelance workers', 'small farmers', 'large farmers', 'rural workers', 'Industrialists', 'civil servants', 'soldiers', 'officers', 'students', 'unemployed'];
+Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'wp', 'other'];
 
 // TODO: add 'sapd' later on
 Q.sapd_formed = 0;
